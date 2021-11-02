@@ -1,7 +1,14 @@
 const DisplayBookList = () => {
-    document.getElementById("bookList").innerText = ""
+    document.getElementById("bookList").innerHTML = `
+    <colgroup>
+    <col id="titleColumn">
+    <col id="authorColumn">
+    </colgroup>
+    <tr>
+    <th id="titleHeader">Book Title</th><th id="authorHeader">Book Author</th></tr>`
     for (let book of bookList) {
-        document.getElementById("bookList").innerHTML += book.name + " by " + book.author + "<br>"
-    }  
+        document.getElementById("bookList").innerHTML += `<tr> <td>${book.name}</td> <td>${book.author}</td> </tr>`
+    }
+    console.log(document.getElementById("bookList").innerHTML)  
 }
 export default DisplayBookList

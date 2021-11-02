@@ -1,0 +1,29 @@
+table {
+    table-layout: fixed;
+    border: 2px solid black;
+    width: 20em;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+#titleHeader {
+    width: 10em;
+    border-bottom:2px solid black;
+}
+#authorHeader {
+    width: 10em;
+    border-bottom:2px solid black;
+}
+td {
+    overflow: hidden;
+    border-bottom:1px solid black;
+}
+td + td { 
+    border-left:1px solid black;
+
+}
+th + th {
+    border-left:1px solid black;
+}
+
+
+
