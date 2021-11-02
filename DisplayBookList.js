@@ -9,6 +9,5 @@ const DisplayBookList = () => {
     for (let book of bookList) {
         document.getElementById("bookList").innerHTML += `<tr> <td>${book.name}</td> <td>${book.author}</td> </tr>`
     }
-    console.log(document.getElementById("bookList").innerHTML)  
 }
 export default DisplayBookList
